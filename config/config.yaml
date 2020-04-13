@@ -1,0 +1,54 @@
+---
+documentclass: book
+classoption: twoside
+papersize: a4
+geometry: margin=2cm,bindingoffset=1cm
+fontsize: 12pt
+# Use 1.5 line spacing
+linestretch: 1.3
+toc: true
+lof: true
+lot: true
+colorlinks: true
+linkcolor: Black
+urlcolor: Blue
+secnumdepth: 2
+pagestyle: headings
+has-frontmatter: true
+
+# pandoc-crossref options
+cref: false
+numberSections: false
+sectionsDepth: 3
+codeBlockCaptions: true
+pairDelim: "and"
+lastDelim: "and"
+secPrefix:
+    - "section"
+    - "sections"
+figPrefix:
+    - "figure"
+    - "figures"
+tblPrefix:
+    - "table"
+    - "tables"
+eqnPrefix:
+    - "equation"
+    - "equations"
+
+# pandoc-citeproc options
+link-citations: true
+citation-style: config/harvard-newcastle-university.csl 
+reference-section-title: Bibliography
+
+# This is where you can add addtional latex packages if you need them.
+header-includes:
+    - \usepackage{graphicx}
+   #- \usepackage{algorithm2e}
+include-before:
+    - \input{front-matter/title.tex} 
+    - \input{front-matter/dedication.tex} 
+    - \input{front-matter/abstract.tex} 
+    - \input{front-matter/declaration.tex}
+    - \input{front-matter/acknowledgements.tex}
+---
